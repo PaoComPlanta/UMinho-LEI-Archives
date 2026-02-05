@@ -1,0 +1,1216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario name="/home/core/Desktop/tp2_2025_1.xml">
+  <networks>
+    <network id="11" name="n11" type="SWITCH">
+      <position x="601" y="317" lat="47.57628519861569" lon="-122.12422368771367" alt="2.0"/>
+    </network>
+    <network id="12" name="n12" type="SWITCH">
+      <position x="743" y="747" lat="47.57237628398417" lon="-122.12231027615849" alt="2.0"/>
+    </network>
+    <network id="13" name="n13" type="SWITCH">
+      <position x="1510" y="318" lat="47.57627610845505" lon="-122.1119751588147" alt="2.0"/>
+    </network>
+    <network id="14" name="n14" type="SWITCH">
+      <position x="1383" y="753" lat="47.57232173892517" lon="-122.11368644943093" alt="2.0"/>
+    </network>
+  </networks>
+  <devices>
+    <device id="1" name="n1" type="router" class="" image="">
+      <position x="1083" y="477" lat="47.57483075283952" lon="-122.11772886820948" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="2" name="n2" type="router" class="" image="">
+      <position x="930" y="550" lat="47.57416714853331" lon="-122.11979050178654" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="3" name="n3" type="router" class="" image="">
+      <position x="1237" y="553" lat="47.57413987694356" lon="-122.11565375990317" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="4" name="n4" type="router" class="" image="">
+      <position x="1083" y="610" lat="47.57362171403984" lon="-122.11772886820948" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="5" name="ReiDaNet" type="router" class="" image="">
+      <position x="601" y="547" lat="47.57419442010885" lon="-122.12422368771367" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="6" name="CondadOnline" type="router" class="" image="">
+      <position x="1510" y="550" lat="47.57416714853331" lon="-122.1119751588147" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="7" name="RACondado" type="router" class="" image="">
+      <position x="601" y="430" lat="47.57525800047687" lon="-122.12422368771367" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="8" name="RAInstitucional" type="router" class="" image="">
+      <position x="600" y="669" lat="47.57308536458137" lon="-122.12423716244294" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="9" name="RAGaliza" type="router" class="" image="">
+      <position x="1510" y="428" lat="47.57527618115008" lon="-122.1119751588147" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="10" name="RACDN" type="router" class="" image="">
+      <position x="1511" y="677" lat="47.573012638808144" lon="-122.11196168408544" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="15" name="AfonsoHenriques" type="PC" class="" image="">
+      <position x="750" y="227" lat="47.57710330661138" lon="-122.12221595305365" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="16" name="EgasMoniz" type="PC" class="" image="">
+      <position x="602" y="192" lat="47.57742145626878" lon="-122.12421021298441" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="17" name="PJ" icon="host.gif" type="PC" class="" image="">
+      <position x="618" y="947" lat="47.570558084735524" lon="-122.1239946173162" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="18" name="Telepizza" icon="host.gif" type="PC" class="" image="">
+      <position x="730" y="923" lat="47.57077627197832" lon="-122.1224854476389" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="19" name="Fernao" type="PC" class="" image="">
+      <position x="1656" y="226" lat="47.57711239662842" lon="-122.11000784834246" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="20" name="Teresa" type="PC" class="" image="">
+      <position x="1511" y="179" lat="47.57753962564916" lon="-122.11196168408544" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="21" name="CMTV" icon="host.gif" type="PC" class="" image="">
+      <position x="1504" y="930" lat="47.57071263412641" lon="-122.11205600719026" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="22" name="Reddit" icon="host.gif" type="host" class="" image="">
+      <position x="1403" y="922" lat="47.570785363093705" lon="-122.1134169548457" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="23" name="Castelo" type="host" class="" image="">
+      <position x="467" y="226" lat="47.57711239662842" lon="-122.12602930143474" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="24" name="Bombeiros" type="host" class="" image="">
+      <position x="788" y="848" lat="47.571458101253334" lon="-122.1217039133417" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="25" name="Panda" type="host" class="" image="">
+      <position x="1328" y="854" lat="47.57140355523799" lon="-122.11442755954035" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="26" name="AirFryer" icon="pc.gif" type="host" class="" image="">
+      <position x="1394" y="222" lat="47.5771487566808" lon="-122.11353822740905" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="27" name="n6" type="router" class="" image="">
+      <position x="1365" y="617" lat="47.573558079645544" lon="-122.11392899455764" alt="2.0"/>
+      <services>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="28" name="n5" type="router" class="" image="">
+      <position x="772" y="615" lat="47.57357626090894" lon="-122.12191950900991" alt="2.0"/>
+      <services>
+        <service name="OSPFv2"/>
+        <service name="OSPFv3"/>
+        <service name="zebra"/>
+        <service name="IPForward"/>
+      </services>
+    </device>
+    <device id="29" name="Twitch" icon="host.gif" type="PC" class="" image="">
+      <position x="1561" y="903" lat="47.57095809398628" lon="-122.11128794762233" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="30" name="CondadoGram" icon="host.gif" type="PC" class="" image="">
+      <position x="1684" y="811" lat="47.57179446709251" lon="-122.10963055592315" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+      </services>
+    </device>
+    <device id="31" name="UMinho" type="host" class="" image="">
+      <position x="402" y="806" lat="47.571839921769936" lon="-122.12690515883676" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+    <device id="32" name="DI" type="host" class="" image="">
+      <position x="509" y="911" lat="47.570885365258846" lon="-122.12546336280576" alt="2.0"/>
+      <services>
+        <service name="DefaultRoute"/>
+        <service name="SSH"/>
+      </services>
+    </device>
+  </devices>
+  <links>
+    <link node1="11" node2="7">
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:18" ip4="192.168.0.225" ip4_mask="29" ip6="2001:12::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="15">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:19" ip4="192.168.0.226" ip4_mask="29" ip6="2001:12::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="16">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:1a" ip4="192.168.0.227" ip4_mask="29" ip6="2001:12::21" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="11" node2="23">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:1b" ip4="192.168.0.228" ip4_mask="29" ip6="2001:12::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="12" node2="8">
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:1c" ip4="192.168.0.249" ip4_mask="29" ip6="2001:13::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="12" node2="17">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:1d" ip4="192.168.0.250" ip4_mask="29" ip6="2001:13::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="12" node2="24">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:1e" ip4="192.168.0.252" ip4_mask="29" ip6="2001:13::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="12" node2="18">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:1f" ip4="192.168.0.251" ip4_mask="29" ip6="2001:13::21" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="13" node2="9">
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:10" ip4="192.168.0.129" ip4_mask="29" ip6="2001:9::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="13" node2="26">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:11" ip4="192.168.0.132" ip4_mask="29" ip6="2001:9::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="13" node2="19">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:12" ip4="192.168.0.131" ip4_mask="29" ip6="2001:9::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="13" node2="20">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:13" ip4="192.168.0.130" ip4_mask="29" ip6="2001:9::21" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="14" node2="10">
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:0c" ip4="192.168.0.153" ip4_mask="29" ip6="2001:8::1" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="14" node2="25">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:0d" ip4="192.168.0.154" ip4_mask="29" ip6="2001:8::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="14" node2="22">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:0e" ip4="192.168.0.155" ip4_mask="29" ip6="2001:8::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="14" node2="21">
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:0f" ip4="192.168.0.156" ip4_mask="29" ip6="2001:8::21" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="1" node2="3">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:00" ip4="10.0.0.10" ip4_mask="30" ip6="2001::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:01" ip4="10.0.0.9" ip4_mask="30" ip6="2001::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="3" node2="4">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:02" ip4="10.0.0.17" ip4_mask="30" ip6="2001:1::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:03" ip4="10.0.0.18" ip4_mask="30" ip6="2001:1::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="4" node2="2">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:04" ip4="10.0.0.21" ip4_mask="30" ip6="2001:2::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:05" ip4="10.0.0.22" ip4_mask="30" ip6="2001:2::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="2" node2="1">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:06" ip4="10.0.0.14" ip4_mask="30" ip6="2001:3::1" ip6_mask="64"/>
+      <iface2 id="1" name="eth1" mac="00:00:00:aa:00:07" ip4="10.0.0.13" ip4_mask="30" ip6="2001:3::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="6" node2="9">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:08" ip4="172.16.142.1" ip4_mask="30" ip6="2001:6::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:09" ip4="172.16.142.2" ip4_mask="30" ip6="2001:6::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="6" node2="10">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:0a" ip4="172.16.142.5" ip4_mask="30" ip6="2001:7::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:0b" ip4="172.16.142.6" ip4_mask="30" ip6="2001:7::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="5" node2="7">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:14" ip4="172.16.143.1" ip4_mask="30" ip6="2001:10::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:15" ip4="172.16.143.2" ip4_mask="30" ip6="2001:10::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="5" node2="8">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:16" ip4="172.16.143.5" ip4_mask="30" ip6="2001:11::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:17" ip4="172.16.143.6" ip4_mask="30" ip6="2001:11::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="27" node2="6">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:20" ip4="10.0.0.2" ip4_mask="30" ip6="2001:5::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:21" ip4="10.0.0.1" ip4_mask="30" ip6="2001:5::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="27" node2="3">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:22" ip4="10.0.0.5" ip4_mask="30" ip6="2001:14::1" ip6_mask="64"/>
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:23" ip4="10.0.0.6" ip4_mask="30" ip6="2001:14::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="5" node2="28">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:24" ip4="10.0.0.30" ip4_mask="30" ip6="2001:4::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:25" ip4="10.0.0.29" ip4_mask="30" ip6="2001:4::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="28" node2="2">
+      <iface1 id="1" name="eth1" mac="00:00:00:aa:00:26" ip4="10.0.0.26" ip4_mask="30" ip6="2001:15::1" ip6_mask="64"/>
+      <iface2 id="2" name="eth2" mac="00:00:00:aa:00:27" ip4="10.0.0.25" ip4_mask="30" ip6="2001:15::2" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="29">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:28" ip4="192.168.0.145" ip4_mask="29" ip6="2001:16::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:29" ip4="192.168.0.146" ip4_mask="29" ip6="2001:16::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="10" node2="30">
+      <iface1 id="3" name="eth3" mac="00:00:00:aa:00:2a" ip4="192.168.0.137" ip4_mask="29" ip6="2001:17::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:2b" ip4="192.168.0.138" ip4_mask="29" ip6="2001:17::20" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="8" node2="31">
+      <iface1 id="2" name="eth2" mac="00:00:00:aa:00:2c" ip4="192.168.0.233" ip4_mask="29" ip6="2001:18::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:2d" ip4="192.168.0.234" ip4_mask="29" ip6="2001:18::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+    <link node1="8" node2="32">
+      <iface1 id="3" name="eth3" mac="00:00:00:aa:00:2e" ip4="192.168.0.241" ip4_mask="29" ip6="2001:19::1" ip6_mask="64"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:2f" ip4="192.168.0.242" ip4_mask="29" ip6="2001:19::10" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0"/>
+    </link>
+  </links>
+  <emane_global_configuration>
+    <emulator/>
+    <core>
+      <configuration name="platform_id_start" value="1"/>
+      <configuration name="nem_id_start" value="1"/>
+      <configuration name="link_enabled" value="1"/>
+      <configuration name="loss_threshold" value="30"/>
+      <configuration name="link_interval" value="1"/>
+      <configuration name="link_timeout" value="4"/>
+    </core>
+  </emane_global_configuration>
+  <service_configurations>
+    <service name="zebra" node="1">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+!
+interface eth1
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.14
+ip route 192.168.0.128 255.255.255.248 10.0.0.14
+ip route 192.168.0.152 255.255.255.248 10.0.0.9
+ip route 192.168.0.144 255.255.255.248 10.0.0.9
+ip route 192.168.0.136 255.255.255.248 10.0.0.9
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.14
+ip route 192.168.0.232 255.255.255.248 10.0.0.14
+ip route 192.168.0.240 255.255.255.248 10.0.0.14
+ip route 192.168.0.248 255.255.255.248 10.0.0.14
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.9
+ip route 10.0.0.4 255.255.255.252 10.0.0.9
+ip route 10.0.0.16 255.255.255.252 10.0.0.9
+ip route 10.0.0.20 255.255.255.252 10.0.0.14
+ip route 10.0.0.24 255.255.255.252 10.0.0.14
+ip route 10.0.0.28 255.255.255.252 10.0.0.14
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.14
+ip route 172.16.143.4 255.255.255.252 10.0.0.14
+
+ip route 172.16.142.0 255.255.255.252 10.0.0.9
+ip route 172.16.142.4 255.255.255.252 10.0.0.9
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="2">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+!
+interface eth1
+!
+interface eth2
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.26
+
+ip route 192.168.0.130 255.255.255.254 10.0.0.25
+ip route 192.168.0.128 255.255.255.248 10.0.0.13
+ip route 192.168.0.152 255.255.255.248 10.0.0.21
+ip route 192.168.0.144 255.255.255.248 10.0.0.21
+ip route 192.168.0.136 255.255.255.248 10.0.0.21
+
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.26
+ip route 192.168.0.232 255.255.255.248 10.0.0.26
+ip route 192.168.0.240 255.255.255.248 10.0.0.26
+ip route 192.168.0.248 255.255.255.248 10.0.0.26
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.13
+ip route 10.0.0.4 255.255.255.252 10.0.0.21
+ip route 10.0.0.8 255.255.255.252 10.0.0.13
+ip route 10.0.0.16 255.255.255.252 10.0.0.13
+ip route 10.0.0.28 255.255.255.252 10.0.0.26
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.26
+ip route 172.16.143.4 255.255.255.252 10.0.0.26
+
+ip route 172.16.142.0 255.255.255.252 10.0.0.13
+ip route 172.16.142.4 255.255.255.252 10.0.0.21]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="3">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+!
+interface eth1
+!
+interface eth2
+!
+exit
+ip route 172.0.0.0 255.0.0.0 10.0.0.10
+
+ip route 192.168.0.152 255.255.255.248 10.0.0.5
+ip route 192.168.0.144 255.255.255.248 10.0.0.5
+ip route 192.168.0.136 255.255.255.248 10.0.0.5
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.18
+ip route 192.168.0.232 255.255.255.248 10.0.0.10
+ip route 192.168.0.240 255.255.255.248 10.0.0.10
+ip route 192.168.0.248 255.255.255.248 10.0.0.10
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.5
+ip route 10.0.0.12 255.255.255.252 10.0.0.10
+ip route 10.0.0.20 255.255.255.252 10.0.0.18
+ip route 10.0.0.24 255.255.255.252 10.0.0.18
+ip route 10.0.0.28 255.255.255.252 10.0.0.10
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.18
+ip route 172.16.143.4 255.255.255.252 10.0.0.10
+ip route 172.16.142.0 255.255.255.252 10.0.0.5
+ip route 172.16.142.4 255.255.255.252 10.0.0.5
+
+
+
+
+
+
+
+
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="4">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+!
+interface eth1
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.22
+ip route 192.168.0.128 255.255.255.248 10.0.0.17
+ip route 192.168.0.152 255.255.255.248 10.0.0.17
+ip route 192.168.0.144 255.255.255.248 10.0.0.17
+ip route 192.168.0.136 255.255.255.248 10.0.0.17
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.22
+ip route 192.168.0.232 255.255.255.248 10.0.0.22
+ip route 192.168.0.240 255.255.255.248 10.0.0.22
+ip route 192.168.0.248 255.255.255.248 10.0.0.22
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.17
+ip route 10.0.0.4 255.255.255.252 10.0.0.17
+ip route 10.0.0.8 255.255.255.252 10.0.0.17
+ip route 10.0.0.12 255.255.255.252 10.0.0.22
+ip route 10.0.0.24 255.255.255.252 10.0.0.22
+ip route 10.0.0.28 255.255.255.252 10.0.0.22
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.22
+ip route 172.16.143.4 255.255.255.252 10.0.0.22
+ip route 172.16.142.0 255.255.255.252 10.0.0.17
+ip route 172.16.142.4 255.255.255.252 10.0.0.17
+
+
+
+
+
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="5">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 10.0.0.30/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:4::1/64
+!
+interface eth1
+  ip address 172.16.143.1/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:10::1/64
+!
+interface eth2
+  ip address 172.16.143.5/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:11::1/64
+!
+router ospf
+  router-id 10.0.0.30
+  network 10.0.0.30/30 area 0
+  network 172.16.143.1/30 area 0
+  network 172.16.143.5/30 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 10.0.0.30
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+  interface eth2 area 0.0.0.0
+!
+exit
+ip route 192.168.0.128 255.255.255.248 10.0.0.29
+ip route 192.168.0.152 255.255.255.248 10.0.0.29
+ip route 192.168.0.144 255.255.255.248 10.0.0.29
+ip route 192.168.0.136 255.255.255.248 10.0.0.29
+
+ip route 192.168.0.224 255.255.255.248 172.16.143.2
+ip route 192.168.0.232 255.255.255.248 172.16.143.6
+ip route 192.168.0.240 255.255.255.248 172.16.143.6
+ip route 192.168.0.248 255.255.255.248 172.16.143.6
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.29
+ip route 10.0.0.4 255.255.255.252 10.0.0.29
+ip route 10.0.0.8 255.255.255.252 10.0.0.29
+ip route 10.0.0.12 255.255.255.252 10.0.0.29
+ip route 10.0.0.16 255.255.255.252 10.0.0.29
+ip route 10.0.0.20 255.255.255.252 10.0.0.29
+ip route 10.0.0.24 255.255.255.252 10.0.0.29
+ip route 10.0.0.28 255.255.255.252 10.0.0.29
+
+ip route 172.16.142.0 255.255.255.252 10.0.0.29
+ip route 192.142.0.4 255.255.255.252 10.0.0.29
+
+
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="6">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 10.0.0.1/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:5::2/64
+!
+interface eth1
+  ip address 172.16.142.1/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:6::1/64
+!
+interface eth2
+  ip address 172.16.142.5/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:7::1/64
+!
+router ospf
+  router-id 10.0.0.1
+  network 10.0.0.1/30 area 0
+  network 172.16.142.1/30 area 0
+  network 172.16.142.5/30 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 10.0.0.1
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+  interface eth2 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.2
+
+ip route 192.168.0.128 255.255.255.248 172.16.142.2
+ip route 192.168.0.152 255.255.255.248 172.16.142.6
+ip route 192.168.0.144 255.255.255.248 172.16.142.6
+ip route 192.168.0.136 255.255.255.248 172.16.142.6
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.2
+ip route 192.168.0.232 255.255.255.248 10.0.0.2
+ip route 192.168.0.240 255.255.255.248 10.0.0.2
+ip route 192.168.0.248 255.255.255.248 10.0.0.2
+
+ip route 10.0.0.4 255.255.255.252 10.0.0.2
+ip route 10.0.0.8 255.255.255.252 10.0.0.2
+ip route 10.0.0.12 255.255.255.252 10.0.0.2
+ip route 10.0.0.16 255.255.255.252 10.0.0.2
+ip route 10.0.0.20 255.255.255.252 10.0.0.2
+ip route 10.0.0.24 255.255.255.252 10.0.0.2
+ip route 10.0.0.28 255.255.255.252 10.0.0.2
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.2
+ip route 172.16.143.4 255.255.255.252 10.0.0.2
+
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="7">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 172.16.143.2/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:10::2/64
+!
+interface eth1
+  ip address 192.168.0.225/29
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:12::1/64
+!
+router ospf
+  router-id 172.16.143.2
+  network 172.16.143.2/30 area 0
+  network 192.168.0.225/29 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 172.16.143.2
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 172.16.143.1
+ip route 192.168.0.128 255.255.255.248 172.16.143.1
+ip route 192.168.0.152 255.255.255.248 172.16.143.1
+ip route 192.168.0.144 255.255.255.248 172.16.143.1
+ip route 192.168.0.136 255.255.255.248 172.16.143.1
+
+ip route 10.0.0.0 255.255.255.252 172.16.143.1
+ip route 10.0.0.4 255.255.255.252 172.16.143.1
+ip route 10.0.0.8 255.255.255.252 172.16.143.1
+ip route 10.0.0.12 255.255.255.252 172.16.143.1
+ip route 10.0.0.16 255.255.255.252 172.16.143.1
+ip route 10.0.0.20 255.255.255.252 172.16.143.1
+ip route 10.0.0.24 255.255.255.252 172.16.143.1
+ip route 10.0.0.28 255.255.255.252 172.16.143.1
+
+ip route 172.16.142.0 255.255.255.252 172.16.143.1
+ip route 172.16.142.4 255.255.255.252 172.16.143.1
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="8">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 172.16.143.6/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:11::2/64
+!
+interface eth1
+  ip address 192.168.0.249/29
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:13::1/64
+!
+interface eth2
+  ip address 192.168.0.233/29
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:18::1/64
+!
+interface eth3
+  ip address 192.168.0.241/29
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:19::1/64
+!
+router ospf
+  router-id 172.16.143.6
+  network 172.16.143.6/30 area 0
+  network 192.168.0.249/29 area 0
+  network 192.168.0.233/29 area 0
+  network 192.168.0.241/29 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 172.16.143.6
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+  interface eth2 area 0.0.0.0
+  interface eth3 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 172.16.143.5
+ip route 192.168.0.128 255.255.255.248 172.16.143.5
+ip route 192.168.0.152 255.255.255.248 172.16.143.5
+ip route 192.168.0.144 255.255.255.248 172.16.143.5
+ip route 192.168.0.136 255.255.255.248 172.16.143.5
+
+ip route 192.168.0.224 255.255.255.248 172.16.143.5
+
+ip route 10.0.0. 255.255.255.252 172.16.143.5
+ip route 10.0.0.4 255.255.255.252 172.16.143.5
+ip route 10.0.0.8 255.255.255.252 172.16.143.5
+ip route 10.0.0.12 255.255.255.252 172.16.143.5
+ip route 10.0.0.16 255.255.255.252 172.16.143.5
+ip route 10.0.0.20 255.255.255.252 172.16.143.5
+ip route 10.0.0.24 255.255.255.252 172.16.143.5
+ip route 10.0.0.28 255.255.255.252 172.16.143.5
+
+ip route 172.16.142.0 255.255.255.252 172.16.143.5
+ip route 172.16.142.4 255.255.255.252 172.16.143.5]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="9">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 172.16.142.2/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:6::2/64
+!
+interface eth1
+  ip address 192.168.0.193/29
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:9::1/64
+!
+router ospf
+  router-id 172.16.142.2
+  network 172.16.142.2/30 area 0
+  network 192.168.0.193/29 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 172.16.142.2
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 172.16.142.1
+
+ip route 192.168.0.152 255.255.255.248 172.16.142.1
+ip route 192.168.0.144 255.255.255.248 172.16.142.1
+ip route 192.168.0.136 255.255.255.248 172.16.142.1
+
+ip route 192.168.0.232 255.255.255.248 172.16.142.1
+ip route 192.168.0.240 255.255.255.248 172.16.142.1
+ip route 192.168.0.248 255.255.255.248 172.16.142.1
+
+ip route 10.0.0.0 255.255.255.252 172.16.142.1
+ip route 10.0.0.4 255.255.255.252 172.16.142.1
+ip route 10.0.0.8 255.255.255.252 172.16.142.1
+ip route 10.0.0.12 255.255.255.252 172.16.142.1
+ip route 10.0.0.16 255.255.255.252 172.16.142.1
+ip route 10.0.0.20 255.255.255.252 172.16.142.1
+ip route 10.0.0.24 255.255.255.252 172.16.142.1
+ip route 10.0.0.28 255.255.255.252 172.16.142.1
+
+ip route 172.16.143.0 255.255.255.252 172.16.142.1
+ip route 172.16.143.4 255.255.255.252 172.16.142.1
+
+ip route 172.16.142.4 255.255.255.252 172.16.142.1]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="10">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 172.16.142.6/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:7::2/64
+!
+interface eth1
+  ip address 192.168.0.201/29
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:8::1/64
+!
+interface eth2
+  ip address 192.168.0.209/29
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:16::1/64
+!
+interface eth3
+  ip address 192.168.0.217/29
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:17::1/64
+!
+router ospf
+  router-id 172.16.142.6
+  network 172.16.142.6/30 area 0
+  network 192.168.0.201/29 area 0
+  network 192.168.0.209/29 area 0
+  network 192.168.0.217/29 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 172.16.142.6
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+  interface eth2 area 0.0.0.0
+  interface eth3 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 172.16.142.5
+
+ip route 192.168.0.128 255.255.255.248 172.16.142.5
+
+ip route 192.168.0.224 255.255.255.248 172.16.142.5
+ip route 192.168.0.232 255.255.255.248 172.16.142.5
+ip route 192.168.0.240 255.255.255.248 172.16.142.5
+ip route 192.168.0.248 255.255.255.248 172.16.142.5
+
+ip route 10.0.0.4 255.255.255.252 172.16.142.5
+ip route 10.0.0.8 255.255.255.252 172.16.142.5
+ip route 10.0.0.12 255.255.255.252 172.16.142.5
+ip route 10.0.0.16 255.255.255.252 172.16.142.5
+ip route 10.0.0.20 255.255.255.252 172.16.142.5
+ip route 10.0.0.24 255.255.255.252 172.16.142.5
+ip route 10.0.0.28 255.255.255.252 172.16.142.5
+
+ip route 172.16.143.0 255.255.255.252 172.16.142.5
+ip route 172.16.143.4 255.255.255.252 172.16.142.5
+
+ip route 172.16.142.0 255.255.255.252 172.16.142.5]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="27">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+!
+interface eth1
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.6
+
+ip route 192.168.0.128 255.255.255.248 10.0.0.1
+ip route 192.168.0.152 255.255.255.248 10.0.0.1
+ip route 192.168.0.144 255.255.255.248 10.0.0.1
+ip route 192.168.0.136 255.255.255.248 10.0.0.1
+
+ip route 192.168.0.224 255.255.255.248 10.0.0.6
+ip route 192.168.0.232 255.255.255.248 10.0.0.6
+ip route 192.168.0.240 255.255.255.248 10.0.0.6
+ip route 192.168.0.248 255.255.255.248 10.0.0.6
+
+ip route 10.0.0.8 255.255.255.252 10.0.0.6
+ip route 10.0.0.12 255.255.255.252 10.0.0.6
+ip route 10.0.0.16 255.255.255.252 10.0.0.6
+ip route 10.0.0.20 255.255.255.252 10.0.0.6
+ip route 10.0.0.24 255.255.255.252 10.0.0.6
+ip route 10.0.0.28 255.255.255.252 10.0.0.6
+
+ip route 172.16.143.0 255.255.255.252 10.0.0.6
+ip route 172.16.143.4 255.255.255.252 10.0.0.6
+
+ip route 172.16.142.0 255.255.255.252 10.0.0.1
+ip route 172.16.142.4 255.255.255.252 10.0.0.1
+
+
+
+
+
+
+
+]]></file>
+      </files>
+    </service>
+    <service name="zebra" node="28">
+      <directories>
+        <directory>/usr/local/etc/quagga</directory>
+        <directory>/var/run/quagga</directory>
+      </directories>
+      <startups>
+        <startup>bash quaggaboot.sh zebra</startup>
+      </startups>
+      <validates>
+        <validate>pidof zebra</validate>
+      </validates>
+      <shutdowns>
+        <shutdown>killall zebra</shutdown>
+      </shutdowns>
+      <files>
+        <file name="/usr/local/etc/quagga/Quagga.conf"><![CDATA[interface eth0
+  ip address 10.0.0.29/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:4::2/64
+!
+interface eth1
+  ip address 10.0.0.26/30
+  ip ospf network point-to-point
+  ip ospf hello-interval 2
+  ip ospf dead-interval 6
+  ip ospf retransmit-interval 5
+  ipv6 address 2001:15::1/64
+!
+router ospf
+  router-id 10.0.0.29
+  network 10.0.0.29/30 area 0
+  network 10.0.0.26/30 area 0
+!
+router ospf6
+  instance-id 65
+  router-id 10.0.0.29
+  interface eth0 area 0.0.0.0
+  interface eth1 area 0.0.0.0
+!
+exit
+
+ip route 172.0.0.0 255.0.0.0 10.0.0.30
+ip route 192.168.0.0 255.255.255.0 10.0.0.30
+ip route 192.168.0.128 255.255.255.248 10.0.0.25
+ip route 192.168.0.152 255.255.255.248 10.0.0.25
+ip route 192.168.0.144 255.255.255.248 10.0.0.25
+ip route 192.168.0.136 255.255.255.248 10.0.0.25
+
+ip route 10.0.0.0 255.255.255.252 10.0.0.25
+ip route 10.0.0.4 255.255.255.252 10.0.0.25
+ip route 10.0.0.8 255.255.255.252 10.0.0.25
+ip route 10.0.0.12 255.255.255.252 10.0.0.25
+ip route 10.0.0.16 255.255.255.252 10.0.0.25
+ip route 10.0.0.20 255.255.255.252 10.0.0.25
+
+ip route 172.16.142.0 255.255.255.248 10.0.0.25
+ip route 172.16.143.0 255.255.255.248 10.0.0.30
+ip route 192.142.0.4 255.255.255.252 10.0.0.25]]></file>
+      </files>
+    </service>
+  </service_configurations>
+  <session_origin lat="47.5791667" lon="-122.132322" alt="2.0" scale="150.0"/>
+  <session_options>
+    <configuration name="controlnet" value=""/>
+    <configuration name="controlnet0" value=""/>
+    <configuration name="controlnet1" value=""/>
+    <configuration name="controlnet2" value=""/>
+    <configuration name="controlnet3" value=""/>
+    <configuration name="controlnet_updown_script" value=""/>
+    <configuration name="enablerj45" value="1"/>
+    <configuration name="preservedir" value="0"/>
+    <configuration name="enablesdt" value="0"/>
+    <configuration name="sdturl" value="tcp://127.0.0.1:50000/"/>
+    <configuration name="ovs" value="0"/>
+  </session_options>
+  <session_metadata>
+    <configuration name="annotation a1" value="{iconcoords {376 127 825 427}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #9eb6ff} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a2" value="{iconcoords {366.0 671.0 832.0 993.0}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #cfcfa3} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a3" value="{iconcoords {1268 123 1747 427}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #becfff} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a5" value="{iconcoords {1276 673 1735 989}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #e0c9a8} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a4" value="{iconcoords {410.0 107.0}} {type text} {label {Condado Portucalense}} {labelcolor #0000e0} {fontfamily {Arial}} {fontsize {26}} {canvas c1}"/>
+    <configuration name="annotation a6" value="{type text} {iconcoords {838.0 110.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a7" value="{iconcoords {507.0 1026.0}} {type text} {label {Institucional}} {labelcolor #c1c45c} {fontfamily {Arial}} {fontsize {28}} {canvas c1}"/>
+    <configuration name="annotation a8" value="{iconcoords {1461.0 94.0}} {type text} {label {Galiza}} {labelcolor #0086be} {fontfamily {Arial}} {fontsize {28}} {canvas c1}"/>
+    <configuration name="annotation a9" value="{type text} {iconcoords {1516.0 103.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a10" value="{iconcoords {1462.0 1025.0}} {type text} {label {CDN}} {labelcolor #d49300} {fontfamily {Arial}} {fontsize {28}} {canvas c1}"/>
+    <configuration name="annotation a11" value="{iconcoords {1521.0 1039.0}} {type text} {label {}} {labelcolor #a07100} {fontfamily {Arial}} {fontsize {12}} {canvas c1}"/>
+    <configuration name="annotation a12" value="{type text} {iconcoords {1555.0 1058.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a13" value="{iconcoords {694 439 1462 705}} {type oval} {label {}} {labelcolor black} {fontfamily {Arial}} {fontsize {12}} {color #acf99c} {width 0} {border black} {canvas c1}"/>
+    <configuration name="annotation a14" value="{iconcoords {1033.0 741.0}} {type text} {label {Core}} {labelcolor #00c400} {fontfamily {Arial}} {fontsize {28}} {canvas c1}"/>
+    <configuration name="annotation a15" value="{type text} {iconcoords {1060.0 722.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a16" value="{type text} {iconcoords {1070.0 723.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a17" value="{type text} {iconcoords {791.0 500.0}} {label {}} {canvas c1}"/>
+    <configuration name="annotation a18" value="{type text} {iconcoords {835.0 491.0}} {label {}} {canvas c1}"/>
+    <configuration name="canvas c1" value="{name {Canvas1}} {refpt {0 0 47.5791667 -122.132322 2.0}} {scale {150.0}} {size {2000 1500}}"/>
+    <configuration name="global_options" value="interface_names=no ip_addresses=yes ipv6_addresses=no node_labels=yes link_labels=yes show_api=no background_images=no annotations=yes grid=yes traffic_start=0"/>
+  </session_metadata>
+  <default_services>
+    <node type="mdr">
+      <service name="zebra"/>
+      <service name="OSPFv3MDR"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="PC">
+      <service name="DefaultRoute"/>
+    </node>
+    <node type="prouter"/>
+    <node type="router">
+      <service name="zebra"/>
+      <service name="OSPFv2"/>
+      <service name="OSPFv3"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="host">
+      <service name="DefaultRoute"/>
+      <service name="SSH"/>
+    </node>
+  </default_services>
+</scenario>

@@ -1,0 +1,32 @@
+# Mac OS & Windows junk
+.DS_Store
+Thumbs.db
+
+# C / C++
+*.o
+*.exe
+*.out
+*.dll
+*.so
+
+# Java
+*.class
+*.jar
+*.war
+.gradle/
+build/
+target/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv
+venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
