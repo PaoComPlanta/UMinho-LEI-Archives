@@ -1,66 +1,66 @@
-# 📐 Cálculo de Programas
+# 📐 Program Calculation
 
 <div align="center">
 
-**Programação Funcional Rigorosa através da Álgebra de Programas**
+**Rigorous Functional Programming through Program Algebra**
 
-*Universidade do Minho • Licenciatura em Engenharia Informática*
+*University of Minho • Bachelor's Degree in Computer Engineering*
 
 </div>
 
 ---
 
-## 🎯 Visão Geral
+## 🎯 Overview
 
-Esta pasta contém o projeto prático desenvolvido no âmbito da unidade curricular **Cálculo de Programas**, que aborda a programação de computadores como uma área científica rigorosa. Utilizando a **Álgebra de Programação**, o projeto demonstra a derivação formal de programas a partir de especificações matemáticas.
+This folder contains the practical project developed within the scope of the **Program Calculation** course, which approaches computer programming as a rigorous scientific field. Using **Programming Algebra**, the project demonstrates the formal derivation of programs from mathematical specifications.
 
-O trabalho foi desenvolvido em **Literate Haskell**, combinando elegantemente código executável com documentação matemática detalhada.
+The work was developed in **Literate Haskell**, elegantly combining executable code with detailed mathematical documentation.
 
-## 🔬 Problemas Explorados
+## 🔬 Problems Explored
 
-### 🌳 Pesquisa em Largura (BFS)
-Implementação de travessia de árvores por níveis através de um **catamorfismo** para estratificação da estrutura e um **anamorfismo** baseado em filas de estado.
+### 🌳 Breadth-First Search (BFS)
+Implementation of level-order tree traversal through a **catamorphism** for structure stratification and a queue-based state **anamorphism**.
 
-### 📊 Séries de Taylor (sinh x)
-Derivação de uma função mutuamente recursiva para calcular aproximações eficientes da série do **seno hiperbólico**, utilizando diferenças finitas para atualização de coeficientes polinomiais.
+### 📊 Taylor Series (sinh x)
+Derivation of a mutually recursive function to compute efficient approximations of the **hyperbolic sine** series, using finite differences for polynomial coefficient updates.
 
-### ∞ Fluxos Infinitos (Fair Merge)
-Implementação de um algoritmo de fusão equitativa para sequências infinitas que garante ausência de bloqueio, derivado através da **lei dual de recursão mútua de Fokkinga**.
+### ∞ Infinite Streams (Fair Merge)
+Implementation of a fair merge algorithm for infinite sequences that guarantees deadlock freedom, derived through **Fokkinga's mutual recursion dual law**.
 
-### 📡 Telégrafo Probabilístico
-Modelação de um sistema de comunicação com falhas usando uma **Mónada Probabilística** e um catamorfismo probabilístico personalizado para análise de taxas de sucesso na transmissão.
+### 📡 Probabilistic Telegraph
+Modeling of a communication system with failures using a **Probability Monad** and a custom probabilistic catamorphism for analyzing transmission success rates.
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-O projeto foi concebido para ser executado num contentor Docker, assegurando que todas as dependências (Haskell GHC, LaTeX, lhs2TeX) estão corretamente configuradas.
+The project was designed to run in a Docker container, ensuring that all dependencies (Haskell GHC, LaTeX, lhs2TeX) are correctly configured.
 
-### 🐳 1. Configuração do Docker
+### 🐳 1. Docker Setup
 
-Construa a imagem Docker e execute o contentor:
+Build the Docker image and run the container:
 
 ```bash
 docker build -t cp2526t .
 docker run -v ${PWD}:/cp2526t -it cp2526t
 ```
 
-### 💻 2. Execução do Código
+### 💻 2. Code Execution
 
-Carregue o módulo Haskell no interpretador GHC:
+Load the Haskell module in the GHC interpreter:
 
 ```bash
 ghci cp2526t.lhs
 ```
 
-### 📄 3. Geração do Relatório em PDF
+### 📄 3. PDF Report Generation
 
-**Utilizando Make:**
+**Using Make:**
 ```bash
 make full
 ```
 
-**Compilação Manual:**
+**Manual Compilation:**
 ```bash
 lhs2TeX cp2526t.lhs > cp2526t.tex
 pdflatex cp2526t
@@ -71,13 +71,13 @@ pdflatex cp2526t
 
 ---
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-Um agradecimento especial ao **Professor José Nuno Oliveira** e a toda a equipa docente pela disponibilização das bibliotecas de suporte essenciais—incluindo `Cp`, `BTree` e `Probability`—utilizadas ao longo deste projeto.
+Special thanks to **Professor José Nuno Oliveira** and the entire teaching team for providing the essential support libraries—including `Cp`, `BTree`, and `Probability`—used throughout this project.
 
 ---
 
-## 👥 Autores
+## 👥 Authors
 
 <table>
 <tr>
@@ -106,6 +106,6 @@ Um agradecimento especial ao **Professor José Nuno Oliveira** e a toda a equipa
 
 <div align="center">
 
-*Desenvolvido com ❤️ usando Haskell e Álgebra de Programação*
+*Developed with ❤️ using Haskell and Program Algebra*
 
 </div>

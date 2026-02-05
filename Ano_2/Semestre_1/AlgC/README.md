@@ -1,28 +1,28 @@
-🚀 Algoritmos e Complexidade | UMinho
+🚀 Algorithms and Complexity | UMinho
 
-Repositório dedicado ao arquivo de projetos e exercícios práticos desenvolvidos na unidade curricular de Algoritmos e Complexidade da Universidade do Minho.
-📋 Sobre o Curso
+Repository dedicated to archiving projects and practical exercises developed in the Algorithms and Complexity course at the University of Minho.
+📋 About the Course
 
-O foco principal desta disciplina é o estudo aprofundado de estruturas de dados avançadas e a análise da eficiência de algoritmos. Durante o semestre, explorámos soluções otimizadas para problemas clássicos da computação, focando em:
+The main focus of this course is the in-depth study of advanced data structures and the analysis of algorithm efficiency. Throughout the semester, we explored optimized solutions for classic computational problems, focusing on:
 
-    Ordenação e Eficiência: Implementação e análise de algoritmos de sorting.
+    Sorting and Efficiency: Implementation and analysis of sorting algorithms.
 
-    Estruturas Hierárquicas: Domínio de árvores binárias de procura equilibradas (AVL).
+    Hierarchical Structures: Mastery of balanced binary search trees (AVL).
 
-    Teoria de Grafos: Algoritmos de travessia, caminhos mais curtos e conectividade.
+    Graph Theory: Traversal algorithms, shortest paths, and connectivity.
 
-    Otimização: Introdução à Programação Dinâmica e análise de complexidade temporal/espacial.
+    Optimization: Introduction to Dynamic Programming and temporal/spatial complexity analysis.
 
-🛠️ Tecnologias e Ferramentas
+🛠️ Technologies and Tools
 
-    Linguagem Principal: C
+    Main Language: C
 
-    Paradigma: Programação Imperativa com gestão manual de memória.
+    Paradigm: Imperative Programming with manual memory management.
 
-✒️ Notas de Autoria
+✒️ Authorship Notes
 
-Este repositório é composto por uma mistura de código base e implementações próprias:
+This repository is composed of a mixture of base code and custom implementations:
 
-    Base de Trabalho: Os ficheiros de interface (.h) e a estrutura dos programas principais foram gentilmente fornecidos pelo Professor Jorge Sousa Pinto.
+    Base Work: The interface files (.h) and the structure of the main programs were kindly provided by Professor Jorge Sousa Pinto.
 
-    Desenvolvimento: A lógica interna das funções e a resolução dos desafios propostos foram implementadas por mim como parte integrante da avaliação contínua.
+    Development: The internal logic of the functions and the resolution of the proposed challenges were implemented by me as an integral part of continuous assessment.

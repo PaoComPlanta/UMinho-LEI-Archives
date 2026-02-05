@@ -1,36 +1,36 @@
 # 🏎️ JBVMotors | Database System
 
-O **JBVMotors** é uma solução completa de base de dados desenvolvida para a gestão operacional de uma empresa de aluguer de veículos com três sucursais distintas. Este projeto abrange todo o ciclo de vida de desenvolvimento de dados, desde a análise conceptual e modelação até à implementação física e migração técnica.
+**JBVMotors** is a complete database solution developed for the operational management of a vehicle rental company with three distinct branches. This project covers the entire data development lifecycle, from conceptual analysis and modeling to physical implementation and technical migration.
 
-## 📊 Arquitetura e Modelação
-O sistema foi desenhado para garantir a integridade e escalabilidade dos dados, focando-se em:
+## 📊 Architecture and Modeling
+The system was designed to ensure data integrity and scalability, focusing on:
 
-* **Modelação Conceptual:** Diagramas Entidade-Associação (ER) detalhados.
-* **Modelação Lógica:** Esquema relacional normalizado para eliminar redundâncias.
-* **Álgebra Relacional:** Formalização matemática das operações de consulta.
-* **Implementação Física:** Scripts SQL otimizados para **MySQL**.
+* **Conceptual Modeling:** Detailed Entity-Relationship (ER) diagrams.
+* **Logical Modeling:** Normalized relational schema to eliminate redundancies.
+* **Relational Algebra:** Mathematical formalization of query operations.
+* **Physical Implementation:** Optimized SQL scripts for **MySQL**.
 
-## 🛠️ Stack Tecnológica
-* **Base de Dados Principal:** MySQL
-* **Scripting e Automação:** Python 3.7+
-* **Interoperabilidade:** PostgreSQL, CSV e JSON (fontes de dados).
+## 🛠️ Technology Stack
+* **Main Database:** MySQL
+* **Scripting and Automation:** Python 3.7+
+* **Interoperability:** PostgreSQL, CSV, and JSON (data sources).
 
-## ⚙️ Ferramentas de Dados (Python)
-Para facilitar o teste e a integração do sistema, foram desenvolvidos scripts automatizados localizados na diretoria `scripts_python/`:
+## ⚙️ Data Tools (Python)
+To facilitate system testing and integration, automated scripts were developed located in the `scripts_python/` directory:
 
-* **`populate.py`**: Motor de geração de dados fictícios (*fake data*) com exportação multiformato (SQL, CSV e JSON).
-* **`migrate.py`**: Pipeline de ETL para migrar informação de diversas fontes diretamente para o motor MySQL.
+* **`populate.py`**: Fake data generation engine with multi-format export (SQL, CSV, and JSON).
+* **`migrate.py`**: ETL pipeline to migrate information from various sources directly to the MySQL engine.
 
-### Comandos de Utilização
+### Usage Commands
 ```bash
-# Gerar massa de dados completa
+# Generate complete data set
 python populate.py --all
 
-# Executar migração total para MySQL
+# Execute full migration to MySQL
 python migrate.py all
 ```
 
-## 👥 Autores
+## 👥 Authors
 
 * [DelgadoDevT](https://github.com/DelgadoDevT)
 * [PaoComPlanta](https://github.com/paocomplanta)

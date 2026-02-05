@@ -1,15 +1,15 @@
 
-# 📚 Sistema de Indexação de Documentos
+# 📚 Document Indexing System
 
-## 📋 Descrição Geral
+## 📋 General Description
 
-Este projeto, criado no âmbito da disciplina de **Sistemas Operativos** da Universidade do Minho, implementa um **Sistema de Indexação de Documentos** através de uma **arquitetura cliente-servidor** desenvolvida em C. Permite aos utilizadores indexar, pesquisar e gerir metadados de documentos de texto armazenados localmente. O sistema inclui armazenamento persistente, um mecanismo de cache personalizado e suporte para operações concorrentes através de processos filhos.
+This project, created within the scope of the **Operating Systems** course at the University of Minho, implements a **Document Indexing System** through a **client-server architecture** developed in C. It allows users to index, search, and manage metadata of locally stored text documents. The system includes persistent storage, a custom cache mechanism, and support for concurrent operations through child processes.
 
-A comunicação entre o `dclient` (cliente) e o `dserver` (servidor) é realizada através de **named pipes (FIFOs)**, garantindo interações assíncronas, isoladas e escaláveis.
+Communication between the `dclient` (client) and `dserver` (server) is accomplished through **named pipes (FIFOs)**, ensuring asynchronous, isolated, and scalable interactions.
 
 ---
 
-## 👥 Autores
+## 👥 Authors
 
 - [DelgadoDevT](https://github.com/DelgadoDevT)
 - [PaoComPlanta](https://github.com/PaoComPlanta)
@@ -17,45 +17,45 @@ A comunicação entre o `dclient` (cliente) e o `dserver` (servidor) é realizad
 
 ---
 
-## ⚡ Funcionalidades
+## ⚡ Features
 
-### 📝 Indexação (`-a`)
-Adiciona metadados de um documento (título, autores, ano, caminho) ao sistema. Os metadados são anexados ou inseridos no primeiro espaço livre disponível.
-
-```bash
-./bin/dclient -a "titulo" "autores" "ano" "caminho"
-```
-
-### 🔍 Consulta de Metadados (`-c`)
-Obtém os metadados de um documento específico através da sua chave. Operação otimizada pelo sistema de cache.
+### 📝 Indexing (`-a`)
+Adds document metadata (title, authors, year, path) to the system. Metadata is appended or inserted in the first available free space.
 
 ```bash
-./bin/dclient -c "chave"
+./bin/dclient -a "title" "authors" "year" "path"
 ```
 
-### 🗑️ Remover Entrada (`-d`)
-Marca os metadados como inválidos e adiciona a sua posição à fila de espaços livres para reutilização futura.
+### 🔍 Metadata Query (`-c`)
+Retrieves the metadata of a specific document through its key. Operation optimized by the cache system.
 
 ```bash
-./bin/dclient -d "chave"
+./bin/dclient -c "key"
 ```
 
-### 📊 Contagem de Linhas por Palavra-chave (`-l`)
-Conta o número de linhas que contêm uma determinada palavra-chave num documento.
+### 🗑️ Remove Entry (`-d`)
+Marks metadata as invalid and adds its position to the free space queue for future reuse.
 
 ```bash
-./bin/dclient -l "chave" "palavra-chave"
+./bin/dclient -d "key"
 ```
 
-### 🔎 Pesquisa Global (`-s`)
-Executa uma pesquisa paralela em todos os documentos utilizando múltiplos processos (controlado pelo utilizador).
+### 📊 Line Count by Keyword (`-l`)
+Counts the number of lines containing a specific keyword in a document.
 
 ```bash
-./bin/dclient -s "palavra-chave" "num_processos"
+./bin/dclient -l "key" "keyword"
 ```
 
-### 🛑 Encerrar Servidor (`-f`)
-Encerra o servidor de forma segura, persistindo o estado atual e libertando recursos.
+### 🔎 Global Search (`-s`)
+Executes a parallel search across all documents using multiple processes (controlled by the user).
+
+```bash
+./bin/dclient -s "keyword" "num_processes"
+```
+
+### 🛑 Shutdown Server (`-f`)
+Safely shuts down the server, persisting the current state and releasing resources.
 
 ```bash
 ./bin/dclient -f
@@ -63,60 +63,60 @@ Encerra o servidor de forma segura, persistindo o estado atual e libertando recu
 
 ---
 
-## 🏗️ Arquitetura
+## 🏗️ Architecture
 
-- **🔌 Comunicação Cliente-Servidor**: através de named pipes (`/tmp/serverChannel` e `/tmp/clientChannel<PID>`)
-- **💾 Armazenamento de Metadados**: ficheiros binários (`metadata.bin`, `freeQueue.bin`, `identifier.bin`) garantem a persistência de dados
-- **⚙️ Concorrência**: o servidor gere pesquisas paralelas de palavras-chave usando `fork()` e limita processos ativos conforme especificado pelo utilizador
-- **🚀 Cache**: cache em memória com tamanho fixo (definido no arranque do servidor) melhora o desempenho de leitura, utilizando o **Algoritmo do Relógio** para substituição
-- **♻️ Fila de Espaços Livres**: armazena posições reutilizáveis no ficheiro de metadados para reduzir fragmentação
-- **🧹 Coletor de Lixo**: compacta o armazenamento de metadados periodicamente ou quando limites são atingidos
+- **🔌 Client-Server Communication**: through named pipes (`/tmp/serverChannel` and `/tmp/clientChannel<PID>`)
+- **💾 Metadata Storage**: binary files (`metadata.bin`, `freeQueue.bin`, `identifier.bin`) ensure data persistence
+- **⚙️ Concurrency**: the server manages parallel keyword searches using `fork()` and limits active processes as specified by the user
+- **🚀 Cache**: in-memory cache with fixed size (defined at server startup) improves read performance, using the **Clock Algorithm** for replacement
+- **♻️ Free Space Queue**: stores reusable positions in the metadata file to reduce fragmentation
+- **🧹 Garbage Collector**: compacts metadata storage periodically or when limits are reached
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-### 1️⃣ Compilar o projeto
+### 1️⃣ Compile the project
 ```bash
 make
 ```
 
-### 2️⃣ Gerar documentação com Doxygen (opcional)
+### 2️⃣ Generate documentation with Doxygen (optional)
 ```bash
 make doc
 ```
 
-### 3️⃣ Iniciar o servidor
+### 3️⃣ Start the server
 ```bash
 ./bin/dserver dataset/ 36000
 ```
-> **Nota:** O segundo argumento define o tamanho da cache (opcional)
+> **Note:** The second argument defines the cache size (optional)
 
-### 4️⃣ Executar comandos do cliente
-Utilize a sintaxe apresentada na secção de **Funcionalidades**
+### 4️⃣ Execute client commands
+Use the syntax presented in the **Features** section
 
-### 5️⃣ Encerrar o servidor
+### 5️⃣ Shutdown the server
 ```bash
 ./bin/dclient -f
 ```
 
 ---
 
-## 💾 Ficheiros de Persistência
+## 💾 Persistence Files
 
-| Ficheiro | Descrição |
+| File | Description |
 |----------|-----------|
-| `metadata.bin` | Armazena todos os metadados dos documentos |
-| `freeQueue.bin` | Regista posições reutilizáveis no ficheiro de metadados |
-| `identifier.bin` | Regista o próximo ID único a atribuir |
+| `metadata.bin` | Stores all document metadata |
+| `freeQueue.bin` | Records reusable positions in the metadata file |
+| `identifier.bin` | Records the next unique ID to be assigned |
 
-> Estes ficheiros são carregados no arranque do servidor e guardados no encerramento.
+> These files are loaded at server startup and saved on shutdown.
 
 ---
 
-## 📝 Notas
+## 📝 Notes
 
-- ⚠️ O sistema foi concebido para **ambientes baseados em UNIX** (ex.: Linux)
-- 📦 Todos os binários encontram-se na pasta `bin/`
-- 🔧 Os named pipes são criados em `/tmp/`
+- ⚠️ The system was designed for **UNIX-based environments** (e.g., Linux)
+- 📦 All binaries are located in the `bin/` folder
+- 🔧 Named pipes are created in `/tmp/`
 
