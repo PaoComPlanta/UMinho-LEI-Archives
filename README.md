@@ -25,6 +25,55 @@ This repository serves as an **academic archive** containing solutions to exerci
 
 ## 📚 Course Structure
 
+### 📌 Year 3 - Semester 2 (2025/2026)
+
+<table>
+<tr><th>Course</th><th>Technologies</th><th>Topics</th><th>Content</th></tr>
+
+<tr>
+<td><strong>ADI</strong><br/>Intelligent Learning and Decision-Making</td>
+<td><img src="https://img.shields.io/badge/KNIME-Analytics-yellow?style=flat"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></td>
+<td>Data Mining, Predictive Analytics, Machine Learning</td>
+<td><a href="Ano_3/Semestre_2/ADI">📂 View</a></td>
+</tr>
+
+<tr>
+<td><strong>AP</strong><br/>Project Analysis</td>
+<td><img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=flat&logo=microsoft-excel&logoColor=white"/></td>
+<td>Financial Modeling, Investment Appraisal, NPV</td>
+<td><a href="Ano_3/Semestre_2/AP">📂 View</a></td>
+</tr>
+
+<tr>
+<td><strong>CG</strong><br/>Computer Graphics</td>
+<td><img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white"/> <img src="https://img.shields.io/badge/OpenGL-5586A4?style=flat&logo=opengl&logoColor=white"/></td>
+<td>3D Rendering Engine, Shaders, Scene Graphs</td>
+<td><a href="Ano_3/Semestre_2/CG">📂 View</a></td>
+</tr>
+
+<tr>
+<td><strong>LI4</strong><br/>Software Engineering Lab IV</td>
+<td><img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white"/></td>
+<td>Full-stack, Microservices, Distributed Systems</td>
+<td><a href="Ano_3/Semestre_2/LI4">📂 View</a></td>
+</tr>
+
+<tr>
+<td><strong>PL</strong><br/>Language Processing</td>
+<td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></td>
+<td>Compilers, Parsers, Lexical Analysis, AST</td>
+<td><a href="Ano_3/Semestre_2/PL">📂 View</a></td>
+</tr>
+
+<tr>
+<td><strong>SSI</strong><br/>Information Systems Security</td>
+<td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white"/></td>
+<td>Cryptography, Network Security, Vulnerabilities</td>
+<td><a href="Ano_3/Semestre_2/SSI">📂 View</a></td>
+</tr>
+
+</table>
+
 ### 📌 Year 3 - Semester 1 (2025/2026)
 
 <table>
@@ -205,11 +254,11 @@ This repository serves as an **academic archive** containing solutions to exerci
 ## 📊 Repository Statistics
 
 ```
-📁 Total Courses: 16
-💻 Programming Languages: 7+
-🔧 Technologies & Tools: 15+
+📁 Total Courses: 22
+💻 Programming Languages: 8+
+🔧 Technologies & Tools: 20+
 📝 Years of Content: 2023-2026
-🎯 Current Status: 3rd Year (In Progress)
+🎯 Current Status: 3rd Year Completed
 ```
 
 ---
@@ -239,7 +288,7 @@ UMinho-Lei-Archives/
 │   └── Semestre_2/    # BD, POO, RC, SO
 └── Ano_3/
     ├── Semestre_1/    # CC, CP, DSS, IA, IPM, SD
-    └── Semestre_2/    # (Upcoming)
+    └── Semestre_2/    # ADI, AP, CG, LI4, PL, SSI
 ```
 
 ---

@@ -1,0 +1,29 @@
+# Ignore environment configuration files
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore database files
+*.db
+*.sqlite3
+
+# Ignore IDE/editor directories
+.vscode/
+.idea/
+
+# Ignore test reports
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Ignore documentation artifacts (README.md stays tracked)
+docs/
+guides/
+diagramas/
+report.md
+
+ca/
+poetry.lock
+client_data/
