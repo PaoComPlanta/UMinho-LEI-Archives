@@ -9,7 +9,7 @@
 
 *A comprehensive collection of coursework, exercises, and projects from my Bachelor's in Software Engineering at University of Minho*
 
-[🇵🇹 Portuguese Version](#) • [📧 Contact](mailto:simao18mendes@gmail.com) • [💼 LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/simao-mendes-ei/))
+[🇵🇹 Portuguese Version](#) • [📧 Contact](mailto:simao18mendes@gmail.com) • [💼 LinkedIn]([https://www.linkedin.com/in/simao-mendes-ei/])
 
 </div>
 
