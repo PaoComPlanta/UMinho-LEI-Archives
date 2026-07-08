@@ -4,12 +4,12 @@
 
 [![University](https://img.shields.io/badge/University-UMinho-red?style=for-the-badge)](https://www.uminho.pt/)
 [![Degree](https://img.shields.io/badge/Degree-Software%20Engineering-blue?style=for-the-badge)](https://www.di.uminho.pt/)
-[![Years](https://img.shields.io/badge/Years-2023--2026-green?style=for-the-badge)](https://github.com/simaom23)
+[![Years](https://img.shields.io/badge/Years-2023--2026-green?style=for-the-badge)](https://github.com/PaoComPlanta)
 [![License](https://img.shields.io/badge/License-Educational-yellow?style=for-the-badge)](LICENSE)
 
 *A comprehensive collection of coursework, exercises, and projects from my Bachelor's in Software Engineering at University of Minho*
 
-[🇵🇹 Portuguese Version](#) • [📧 Contact](mailto:your.email@example.com) • [💼 LinkedIn](https://linkedin.com/in/yourprofile)
+[🇵🇹 Portuguese Version](#) • [📧 Contact](mailto:simao18mendes@gmail.com) • [💼 LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/simao-mendes-ei/))
 
 </div>
 
